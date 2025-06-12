@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe - VS Computer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Tic Tac Toe - VS Computer</h1>
+
+    <label for="difficulty">Difficulty:</label>
+    <select id="difficulty">
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard" selected>Hard</option>
+    </select>
+
+    <div class="scoreboard">
+      <span>😎 You: <span id="score-x">0</span></span>
+      <span>🤖 AI: <span id="score-o">0</span></span>
+      <span>🤝 Draws: <span id="score-draw">0</span></span>
+    </div>
+
+    <div id="board" class="board"></div>
+    <div id="status" class="status">Your turn (X)</div>
+    <button id="restart">Restart Game</button>
+  </div>
+
+  <audio id="move-sound" src="https://www.soundjay.com/button/beep-07.mp3"></audio>
+  <audio id="win-sound" src="https://www.soundjay.com/button/button-3.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
